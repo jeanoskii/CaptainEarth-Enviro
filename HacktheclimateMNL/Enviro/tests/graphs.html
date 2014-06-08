@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+	<link rel="stylesheet" media="all" href="../jquery-jvectormap.css"/>
+	<script type="text/javascript" src="TacoComponents/MooTools/mootools.js"></script>
+	<script type="text/javascript" src="TacoComponents/MenuMatic/MenuMatic.js"></script>
+	<link rel="stylesheet" type="text/css" href="TacoComponents/MenuMatic/MenuMatic_myNavigationMenu.css" />
+    <style>
+        body {
+        background-color: gray;
+        }
+        #map {
+           
+            max-width:100%;
+            min-height:100%;
+            max-height: 100%;
+            min-height: 100%;
+        }
+        #ph {
+         width: 50vw;
+		height: 97vh;
+        }
+        #clicky 
+        {
+            position:fixed;
+            top:113px;
+        }
+        #welcomePic {
+		position:absolute;
+		min-width:100%;
+		}
+		li 
+		{ 
+		cursor: pointer; 
+		cursor: hand; 
+		}
+    </style>
+	<script>
+		function changeImageD()
+	{
+		var img = document.getElementById("ph");
+		img.src="map-Deforestation.png";
+		return false;
+	}
+		function changeImageDf()
+	{
+		var img = document.getElementById("ph");
+		img.src="map DYNAMITE FISHING.png";
+		return false;
+	}
+		function changeImageh()
+	{
+		var img = document.getElementById("ph");
+		img.src="map habitat reduction.png";
+		return false;
+	}
+		function changeImagep()
+	{
+		var img = document.getElementById("ph");
+		img.src="map-POLLUTION.png";
+		return false;
+	}
+		function changeImagem()
+	{
+		var img = document.getElementById("ph");
+		img.src="map - mining.png";
+		return false;
+	}
+	</script>
+    <title>Graphs</title>
+</head>
+    <body>
+	<div id= "div1">
+	 <div style="float:right; padding: 3px 6px 0px 0px;">
+	 <img src="images/Enviro 1.png" style="width:150px"/>
+	 </div>
+	 <div style="float:left; padding: 6px 0px 0px 0px;">
+	<ul id="myNavigationMenu">
+		<li><a href="#">Category ></a>
+			<ul>
+				<li><a onclick="changeImageD();">Deforestation</a></li>
+				<li><a onclick="changeImageDf();">Dynamite Fishing</a></li>
+				<li><a onclick="changeImageh();">Habitat Reduction</a></li>
+				<li><a onclick="changeImagep();">Pollution</a></li>
+				<li><a onclick="changeImagem();">Mining</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+	<center>
+          <div id ="map">
+             
+                  
+              <img src="map.png" id="ph">
+              </img>
+	</center>
+ 
+			</div>  
+ <div id= "div2">
+
+    	<div style="float:right; padding: 3px 6px 0px 0px;">
+	 	<p style="color:white"><a href="index.html"> Home </a> |
+	 	<a href="about.html"> About </a> |
+	 	<a href="contacts.html"> Contact Us </a>
+	 	</p>
+	</div>
+	
+</body>
+</html>

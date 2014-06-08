@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mindanao</title>
+  <link rel="stylesheet" media="all" href="../jquery-jvectormap.css"/>
+  <script src="assets/jquery-1.8.2.js"></script>
+  <script src="../jquery-jvectormap.js"></script>
+  <script src="../jquery-mousewheel.js"></script>
+
+  <script src="../lib/jvectormap.js"></script>
+
+  <script src="../lib/abstract-element.js"></script>
+  <script src="../lib/abstract-canvas-element.js"></script>
+  <script src="../lib/abstract-shape-element.js"></script>
+
+  <script src="../lib/svg-element.js"></script>
+  <script src="../lib/svg-group-element.js"></script>
+  <script src="../lib/svg-canvas-element.js"></script>
+  <script src="../lib/svg-shape-element.js"></script>
+  <script src="../lib/svg-path-element.js"></script>
+  <script src="../lib/svg-circle-element.js"></script>
+
+  <script src="../lib/vml-element.js"></script>
+  <script src="../lib/vml-group-element.js"></script>
+  <script src="../lib/vml-canvas-element.js"></script>
+  <script src="../lib/vml-shape-element.js"></script>
+  <script src="../lib/vml-path-element.js"></script>
+  <script src="../lib/vml-circle-element.js"></script>
+
+  <script src="../lib/vector-canvas.js"></script>
+  <script src="../lib/simple-scale.js"></script>
+  <script src="../lib/numeric-scale.js"></script>
+  <script src="../lib/ordinal-scale.js"></script>
+  <script src="../lib/color-scale.js"></script>
+  <script src="../lib/data-series.js"></script>
+  <script src="../lib/proj.js"></script>
+  <script src="../lib/world-map.js"></script>
+  
+  <script src="../lib/TacoComponents/MooTools/mootools.js"></script>
+  <script src="../lib/TacoComponents/MenuMatic/MenuMatic.js"></script>
+  
+
+
+  <script src="assets/jquery-jvectormap-ph_regions-mill-en Mindanao v2.js"></script>
+  <script>
+      jQuery.noConflict();
+      jQuery(function () {
+          var $ = jQuery;
+          $('#focus-init').click(function () {
+              $('#map1').vectorMap('set', 'focus', 1, 0, 0);
+          });
+          $('#map1').vectorMap({
+              map: 'ph_regions_mill_en',
+              focusOn: {
+                  x: 0.5,
+                  y: 0.5,
+                  scale: 2
+              },
+              series: {
+                  regions: [{
+                      scale: ['#C8EEFF', '#0071A4'],
+                      normalizeFunction: 'polynomial',
+                      values: {
+                      }
+                  }]
+              }
+          });
+      })
+  </script>
+</head>
+
+<body bgcolor="#8bc6f0">
+
+<div id= "div1">
+	 <div style="float:right; padding: 3px 6px 0px 0px;">
+	 <img src="images/Enviro 1.png" style="width:150px"/>
+	 </div>
+	 <div style="float:left; padding: 6px 0px 0px 0px;">
+	 
+	<!-- Create a MenuMatic Instance -->
+	<script type="text/javascript" >
+	    window.addEvent('load', function () {
+	        var myMenu = new MenuMatic({
+	            id: 'myNavigationMenu',
+	            subMenusContainerId: 'myNavigationMenu_menuContainer',
+	            orientation: 'horizontal',
+	            effect: 'slide & fade',
+	            duration: 800,
+	            hideDelay: 1000,
+	            opacity: 100
+	        });
+	    });
+	</script>
+	 
+	 </div>
+</div>
+    
+    
+   <div id="map1" style="float:left;width:100%;height:735px;">
+      
+   </div>
+    
+  
+    <div id="div3">
+  	<h1 align=center style="margin-top:-3px">Mindanao</h1>
+  	<div><img src="mindanaodef.jpg" style="margin:-10px 0px -10px 50px; width:400px;"/><br/>
+  	<h2>Deforestation in Mindanao</h2>
+  	<p style="margin-bottom:-15px">Status: <font color="yellow">Inactive</font></p>
+  
+  	<p>THE Mindanao Development Authority (Minda) has raised an alarm on the vast deforestation in Mindanao, although it did not say anything about the vast mining concessions.</p>	
+          <center><button onclick="window.location.href='region4.html'" type=button>Back</button>
+  	<button onclick="window.location.href='index.html'" type=button>Close</button>
+  	<button onclick="window.location.href='region4.html'" type=button>Next</button></center>
+  	</div>
+  	</div>
+
+<div id= "div2">
+	<div style="float:right; padding: 3px 6px 0px 0px;">
+	 	<p style="color:white"><a href="index.html"> Home </a> |
+	 	<a href="about.html"> About </a> |
+	 	<a href="contact.html"> Contact Us </a>
+	 	</p>
+	</div>
+</div>
+</body>
+</html>
